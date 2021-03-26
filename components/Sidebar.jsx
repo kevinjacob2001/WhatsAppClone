@@ -4,8 +4,8 @@ function Sidebar() {
     return (
         <Container>
             <Header>
-                
-            </Header>
+
+            </Header >
         </Container>
     )
 }
