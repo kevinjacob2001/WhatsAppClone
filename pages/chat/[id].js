@@ -15,7 +15,7 @@ function Chat({chat,messages}) {
       </Head>
       <Sidebar />
       <ChatContainer>
-        <ChatScreen />
+        <ChatScreen messages={messages} chat={chat}/>
       </ChatContainer>
     </Container>
   );

@@ -37,7 +37,7 @@ const chatAlreadyExists=(recipientEmail)=>{
   return (
     <Container>
       <Header>
-        <UserAvatar src={user.photoURL} onClick={()=>auth.signOut()}/>
+        <UserAvatar src={user?.photoURL} onClick={()=>auth.signOut()}/>
         <IconsContainer>
           <IconButton>
             <ChatIcon />
@@ -65,7 +65,20 @@ const chatAlreadyExists=(recipientEmail)=>{
 
 export default Sidebar;
 
-const Container = styled.div``;
+const Container = styled.div`
+flex:0.45;
+border-right:1px solid whitesmoke;
+min-width:300px;
+max-width:350px;
+overflow-y:scroll;
+height:100vh;
+::-webkit-scrollbar{
+  display:none;
+}
+-ms-overflow-style:none;
+scrollbar-width:none;
+
+`;
 
 const Search = styled.div`
   display: flex;
@@ -98,7 +111,7 @@ const Header = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 15px;
-  height: 80px;
+  height: 6rem !important;
   border-bottom: 3px solid whitesmoke;
 `;
 

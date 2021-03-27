@@ -26,9 +26,9 @@ export default login;
 const OuterContainer = styled.div`
   height: 100vh;
   width: 100vw;
-  background-image: url("https://wallpapercave.com/wp/wp1843761.jpg");
+  background-image: linear-gradient(to right top, #b784a7, #c18bb6, #ca93c5, #d29bd6, #d9a4e7, #c8b1f5, #b7befc, #abc9ff, #8ed7ff, #6ee5ff, #58f1ff, #5ffbf1);
   background-position: center;
-  background-repeat: no-repeat;
+ 
   background-size: cover;
   
 `;
