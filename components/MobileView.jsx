@@ -28,7 +28,7 @@ background-size: cover;
 
 
 const Card=styled.div`
-animation: 1s ${bounceAnimation};
+animation: 2s ${bounceAnimation};
 transform:translate(-50%,-50%);
 position:absolute;
 left:50%;
