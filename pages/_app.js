@@ -5,7 +5,11 @@ import firebase from "firebase"
 import Login from "./login";
 import Loading from "../components/Loading";
 import { useEffect } from "react";
-
+import {
+  MobileView,
+  isMobile
+} from "react-device-detect";
+import Mobileview from '../components/MobileView'
 
 function MyApp({ Component, pageProps }) {
   const [user,loading] = useAuthState(auth);
@@ -19,7 +23,9 @@ function MyApp({ Component, pageProps }) {
       },{merge:true})
     }
   },[user])
-
+  if (isMobile) {
+    return <Mobileview/>
+}
 
   if(loading) return <Loading/>
 
